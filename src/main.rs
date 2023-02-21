@@ -13,7 +13,7 @@ struct ShapeData {
 
 impl ShapeData {
     fn get_area(&self) -> f32 {
-        match &self.shape {
+        match &self.shape { 
             Shape::Square {side} => side * side,
             Shape::Cube { side } => 6.0 * side * side,
             Shape::Circle { radius } => std::f32::consts::PI * radius * radius,
